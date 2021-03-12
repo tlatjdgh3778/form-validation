@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #db6556;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px;
+  width: 400px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+form {
+  padding: 20px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 4px;
+  /* inline-block 해야 마진 들어감 */
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  border: 2px solid #f0f0f0;
+  border-radius: 4%;
+  font-size: 14px;
+  padding: 10px;
+}
+
+form .fas {
+  position: absolute;
+  top: 36px;
+  right: 12px;
+  visibility: hidden;
+}
+
+form small {
+  width: 80%;
+  position: absolute;
+  right: 55px;
+  top: 69px;
+  visibility: hidden;
+  /* display none 은 공간도 없어지지만 visibility hidden 은 공간은 존재함 */
+}
+
+form button {
+  background-color: #db6556;
+  border: 2px solid #db6556;
+  border-radius: 5px;
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.success input {
+  border-color: #15ff00;
+}
+.success i.fa-check-circle {
+  visibility: visible;
+  color: #15ff00;
+}
+
+.error input {
+  border-color: #ff0000;
+}
+.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #ff0000;
+}
+.error small {
+  visibility: visible;
+  color: #ff0000;
+}
